@@ -1,0 +1,48 @@
+.challengeslist {
+  width: 92.969%;
+  height: 100%;
+  margin: 3.125% 3.516% 0 3.516%;
+  padding-bottom: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  overflow-x: hidden;
+  .challengeslist__topsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.7315%;
+    .challengeslist__topsection--counter {
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      white-space: nowrap;
+      color: #a9abb2;
+    }
+    .challengeslist__topsection__add {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      cursor: pointer;
+      .challengeslist__topsection__add--title {
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        text-align: right;
+        color: #256eff;
+      }
+      .challengeslist__topsection__add--icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: 4.475%;
+      }
+    }
+  }
+  .challengeList__cards {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+}

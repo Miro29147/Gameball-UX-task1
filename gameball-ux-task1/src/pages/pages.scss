@@ -1,0 +1,10 @@
+@mixin page-position {
+  position: absolute;
+  width: 80%;
+  height: 91%;
+  left: 20%;
+  top: 9%;
+  border-top: 1px solid #f6f6f6;
+  background-color: #ffffff;
+  overflow: hidden;
+}

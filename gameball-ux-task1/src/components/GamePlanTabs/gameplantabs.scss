@@ -1,0 +1,27 @@
+.gameplantabs {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  .gameplantabs__tab {
+    margin-right: 1.618%;
+    .gameplantabs__tab--title {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #424242;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: #256eff;
+      }
+    }
+  }
+  .gameplantabs__tab.selected {
+    .gameplantabs__tab--title {
+      color: #256eff;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #256eff;
+    }
+  }
+}

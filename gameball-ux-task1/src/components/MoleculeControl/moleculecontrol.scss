@@ -1,0 +1,275 @@
+.moleculecontrol {
+  height: 100%;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.43%;
+  border-radius: 4px;
+  .moleculecontrol__left {
+    display: flex;
+    .moleculecontrol__left__filter {
+      padding-left: 5%;
+      display: flex;
+      align-items: center;
+      transition: all 0.1s ease-in-out;
+      cursor: pointer;
+      .moleculecontrol__left__filter--icon {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+      .moleculecontrol__left__filter--title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        color: #424242;
+        padding-left: 12.86%;
+        padding-right: 9.12%;
+      }
+      .moleculecontrol__left__filter--drop {
+        padding: 11% 5% 11% 0%;
+        width: 0.875rem;
+        height: 0.875rem;
+        margin-right: 38.56%;
+        transition: all 0.1s ease-in-out;
+      }
+      &:hover {
+        border-radius: 5px 0 0 5px;
+        background: #eeeeee;
+        .moleculecontrol__left__filter--drop {
+          background: #eeeeee;
+          border-radius: 0px 5px 5px 0;
+        }
+      }
+    }
+    .moleculecontrol__left__filter.selected {
+      border-radius: 5px 0 0 5px;
+      background: #eeeeee;
+      .moleculecontrol__left__filter--drop {
+        transform: rotate(180deg);
+        background: #eeeeee;
+        border-radius: 0px 5px 0px 5px;
+      }
+    }
+    .moleculecontrol__left__filterdropdown {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: absolute;
+      width: 5.3rem;
+      margin-top: 1.5rem;
+      margin-left: 0rem;
+      background: #eeeeee;
+      border-radius: 0px 0px 5px 5px;
+      z-index: 1;
+      .moleculecontrol__left__filterdropdown__list {
+        padding: 5% 5% 5% 5%;
+        .moleculecontrol__left__filterdropdown__list--item {
+          list-style: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.625rem;
+          line-height: 1.125rem;
+          color: #424242;
+          margin-top: 15%;
+          cursor: pointer;
+          &:hover {
+            color: #749ef3;
+          }
+        }
+        .moleculecontrol__left__filterdropdown__list--item.activated {
+          color: #256eff;
+          &:hover {
+            color: #256eff;
+          }
+        }
+        .moleculecontrol__left__filterdropdown__list--item.disabled {
+          pointer-events: none;
+          opacity: 0.6;
+          &:hover {
+            color: #424242;
+          }
+        }
+      }
+    }
+    .moleculecontrol__left__filterdropdown.active {
+      display: flex;
+      animation: slide-down 0.15s ease-in-out;
+    }
+    @keyframes slide-down {
+      0% {
+        transform: translateY(-7.5%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .moleculecontrol__left__sort {
+      padding-left: 5%;
+      display: flex;
+      align-items: center;
+      margin-left: 31%;
+      transition: all 0.1s ease-in-out;
+      cursor: pointer;
+      .moleculecontrol__left__sort--icon {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+      .moleculecontrol__left__sort--title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        color: #424242;
+        padding-left: 12.86%;
+        padding-right: 9.12%;
+      }
+      .moleculecontrol__left__sort--drop {
+        padding: 12% 5% 12% 0%;
+        width: 0.875rem;
+        height: 0.875rem;
+        transition: all 0.1s ease-in-out;
+      }
+      &:hover {
+        border-radius: 5px 0 0 5px;
+        background: #eeeeee;
+        .moleculecontrol__left__sort--drop {
+          background: #eeeeee;
+          border-radius: 0px 5px 5px 0;
+        }
+      }
+    }
+    .moleculecontrol__left__sort.selected {
+      border-radius: 5px 0 0 5px;
+      background: #eeeeee;
+      .moleculecontrol__left__sort--drop {
+        transform: rotate(180deg);
+        background: #eeeeee;
+        border-radius: 0px 5px 0px 5px;
+      }
+    }
+    .moleculecontrol__left__sortdropdown {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: absolute;
+      width: 4.92rem;
+      margin-top: 1.5rem;
+      margin-left: 6.6rem;
+      background: #eeeeee;
+      border-radius: 0px 0px 5px 5px;
+      z-index: 1;
+      .moleculecontrol__left__sortdropdown__list {
+        padding: 0;
+        .moleculecontrol__left__sortdropdown__list--item {
+          list-style: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.625rem;
+          line-height: 1.125rem;
+          color: #424242;
+          margin-bottom: 5%;
+          margin-top: 15%;
+          cursor: pointer;
+          &:hover {
+            color: #749ef3;
+          }
+        }
+        .moleculecontrol__left__sortdropdown__list--item.activated {
+          color: #256eff;
+          &:hover {
+            color: #256eff;
+          }
+        }
+      }
+    }
+    .moleculecontrol__left__sortdropdown.active {
+      display: flex;
+      animation: slide-down 0.15s ease-in-out;
+    }
+  }
+  .moleculecontrol__search {
+    display: flex;
+    justify-content: flex-end;
+    .moleculecontrol__search--icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      transform: scale(1, 1);
+    }
+    .moleculecontrol__search--input {
+      border: none;
+      outline: none;
+      width: 42.5%;
+      margin-left: 4.91%;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      background: #f6f6f6;
+      &::placeholder {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        color: #424242;
+      }
+    }
+    &:hover {
+      .moleculecontrol__search--icon {
+        transform: scale(1.08, 1.08);
+      }
+    }
+  }
+  .moleculecontrol__search.searching {
+    justify-content: start;
+    width: 25%;
+    transition: all 0.1s ease-in-out;
+    transform: translateX(-25%);
+    .moleculecontrol__search--icon {
+      transform: scale(1.08, 1.08);
+    }
+    .moleculecontrol__search--input {
+      width: 125%;
+    }
+  }
+  .moleculecontrol__search.disabled {
+    &:hover {
+      .moleculecontrol__search--icon {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}

@@ -1,0 +1,39 @@
+@import "../pages.scss";
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include page-position;
+  .dashboard__animation {
+    width: 25rem;
+    animation: shake-up 1.5s ease-in-out 1s infinite;
+  }
+
+  @keyframes shake-up {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateY(-185px);
+    }
+    35% {
+      transform: translateY(-185px) rotate(17deg);
+    }
+    55% {
+      transform: translateY(-185px) rotate(-16deg);
+    }
+    65% {
+      transform: translateY(-185px) rotate(15deg);
+    }
+    75% {
+      transform: translateY(-185px) rotate(-13deg);
+    }
+    85% {
+      transform: translateY(-185px) rotate(10deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+}

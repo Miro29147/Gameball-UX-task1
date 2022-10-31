@@ -1,0 +1,15 @@
+@import "../pages.scss";
+
+.gameplan {
+  @include page-position;
+  .gameplan__gameplantabs {
+    margin-left: 3.516%;
+    margin-top: 7.52%;
+  }
+  .gameplan__moleculecontrol {
+    height: 7.143%;
+    margin-top: 4.102%;
+    margin-left: 3.516%;
+    margin-right: 3.516%;
+  }
+}
