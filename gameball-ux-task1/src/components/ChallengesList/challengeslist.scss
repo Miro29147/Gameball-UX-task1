@@ -5,7 +5,7 @@
   padding-bottom: 5px;
   font-family: "Poppins";
   font-style: normal;
-  overflow: hidden;
+  overflow-x: hidden;
   .challengeslist__topsection {
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@
     .challengeList__cards {
       height: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
       align-content: flex-start;
       justify-content: flex-start;
@@ -102,6 +102,36 @@
 
 /* Medium devices (tablets, 768px and down) */
 @media screen and (max-width: 768px) {
+  .challengeslist {
+    .challengeslist__topsection {
+      .challengeslist__topsection--counter {
+        font-size: 0.5812rem;
+      }
+      .challengeslist__topsection__add {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        cursor: pointer;
+        .challengeslist__topsection__add--title {
+          font-size: 0.5812rem;
+        }
+        .challengeslist__topsection__add--icon {
+          width: 0.9687rem;
+          height: 0.9687rem;
+          margin-left: 4.475%;
+        }
+      }
+    }
+    .challengeList__cards {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: flex-start;
+    }
+  }
 }
 
 /* Small devices (landscape phones, 576px and down) */
