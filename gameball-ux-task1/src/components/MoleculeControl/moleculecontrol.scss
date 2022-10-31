@@ -254,6 +254,85 @@
   }
 }
 
+/* Large devices (desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+  .moleculecontrol {
+    .moleculecontrol__left {
+      .moleculecontrol__left__filter {
+        .moleculecontrol__left__filter--icon {
+          width: 0.9687rem;
+          height: 0.9687rem;
+        }
+        .moleculecontrol__left__filter--title {
+          font-size: 0.58125rem;
+          padding-top: 1%;
+          padding-left: 12%;
+          padding-right: 9%;
+        }
+        .moleculecontrol__left__filter--drop {
+          padding: 18% 5% 18% 0%;
+          width: 0.6781rem;
+          height: 0.6781rem;
+          margin-right: 38.56%;
+        }
+      }
+      .moleculecontrol__left__filterdropdown {
+        width: 4.1rem;
+        margin-top: 1.5rem;
+      }
+      .moleculecontrol__left__sort {
+        .moleculecontrol__left__sort--icon {
+          width: 0.9687rem;
+          height: 0.9687rem;
+        }
+        .moleculecontrol__left__sort--title {
+          font-size: 0.58125rem;
+          padding-top: 1%;
+          padding-left: 12%;
+          padding-right: 9%;
+        }
+        .moleculecontrol__left__sort--drop {
+          padding: 20% 5% 20% 0%;
+          width: 0.6781rem;
+          height: 0.6781rem;
+          transition: all 0.1s ease-in-out;
+        }
+      }
+      .moleculecontrol__left__sortdropdown {
+        width: 3.8rem;
+        margin-top: 1.5rem;
+        margin-left: 5.1rem;
+      }
+    }
+    .moleculecontrol__search {
+      .moleculecontrol__search--icon {
+        width: 0.9687rem;
+        height: 0.9687rem;
+        cursor: pointer;
+        transform: scale(1, 1);
+      }
+      .moleculecontrol__search--input {
+        width: 42.5%;
+        margin-left: 4.91%;
+        font-size: 0.5812rem;
+        background: #f6f6f6;
+        &::placeholder {
+          font-weight: 400;
+          font-size: 0.5812rem;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+}
+
 /* clears the 'X' from Internet Explorer */
 input[type="search"]::-ms-clear {
   display: none;

@@ -320,7 +320,7 @@ const MoleculeControl: React.FC<Props> = ({
           </ul>
         </div>
       </div>
-      <div
+      <div 
         className={
           isActiveFilter || isInActiveFilter
             ? "moleculecontrol__search disabled"

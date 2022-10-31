@@ -8,7 +8,7 @@
     padding-left: 2em;
     width: 8.125rem;
     height: 2.125rem;
-    margin-top: 7%;
+    margin-top: 1.1875rem;
     cursor: pointer;
   }
   .sidemenu__top--logo {
@@ -62,6 +62,88 @@
         height: 2.875rem;
         border-radius: 0 40px 40px 0;
         background-color: #256eff;
+      }
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+  .sidemenu {
+    .sidemenu__top {
+      width: 6.2968rem;
+      height: 1.6468rem;
+    }
+    .sidemenu__pages {
+      .sidemenu__pages__page {
+        height: 2.875rem;
+        .sidemenu__pages__page--icon {
+          width: 1.453rem;
+          height: 1.453rem;
+        }
+        .sidemenu__pages__page--title {
+          font-size: 0.775rem;
+          padding-left: 0.56em;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  .sidemenu {
+    .sidemenu__top {
+      padding-left: 0.5em;
+    }
+    .sidemenu__pages {
+      .sidemenu__pages__page {
+        padding-left: 0.75em;
+        .sidemenu__pages__page--icon {
+        }
+        .sidemenu__pages__page--title {
+          padding-left: 0.46em;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+  .sidemenu {
+    width: 25%;
+    .sidemenu__top {
+      padding-left: 0.45em;
+      width: 4.875rem;
+      height: 1.275rem;
+    }
+    .sidemenu__pages {
+      width: 25%;
+      .sidemenu__pages__page {
+        height: 2rem;
+        padding-left: 0.5em;
+        .sidemenu__pages__page--icon {
+          width: 1.125rem;
+          height: 1.125rem;
+        }
+        .sidemenu__pages__page--title {
+          font-size: 0.6rem;
+          padding-left: 0.46em;
+        }
+        &:hover {
+          background: #eeeeee;
+          &::before {
+            width: 2px;
+            height: 2rem;
+          }
+        }
+      }
+      .sidemenu__pages__page.selected {
+        &::before {
+          width: 2px;
+          height: 2rem;
+        }
       }
     }
   }

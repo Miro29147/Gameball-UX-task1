@@ -144,3 +144,186 @@
 .challengecard:nth-child(3n) {
   margin-right: 0px;
 }
+
+@media screen and (min-width: 1300px) {
+  .challengecard {
+    height: 31%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .challengecard {
+    width: 48%;
+    height: 32%;
+    margin-right: 3%;
+  }
+  .challengecard:nth-child(3n) {
+    margin-right: 3%;
+  }
+  .challengecard:nth-child(2n) {
+    margin-right: 0%;
+  }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+  .challengecard {
+    width: 48%;
+    height: 32%;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  .challengecard {
+    width: 48%;
+    height: 26.5%;
+    .challengecard__status {
+      margin-top: 4.055%;
+      margin-right: 4.055%;
+      .challengecard__activestatus--text {
+        font-size: 0.4rem;
+      }
+      .challengecard__inactivestatus--text {
+        font-size: 0.4rem;
+      }
+      .challengecard__activestatus--icon {
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+      .challengecard__inactivestatus--icon {
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+    }
+    .challengecard__header {
+      width: 100%;
+      margin: 0% 8.11% 0 8.11%;
+      .challengecard__header--image {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding-right: 2.703%;
+      }
+      .challengecard__header__text {
+        .challengecard__header__text--title {
+          font-size: 0.7rem;
+        }
+        .challengecard__header__text--date {
+          font-size: 0.4rem;
+        }
+      }
+    }
+    .challengecard--paragraph {
+      font-size: 0.6rem;
+      margin: 5.406% 8.11% 0 8.11%;
+    }
+    .challengecard__misc {
+      margin: 5.406% 8.11% 5.406% 8.11%;
+      .challengecard__misc__list {
+        .challengecard__misc__list__item {
+          .challengecard__misc__list__item__row {
+            .challengecard__misc__list__item__row--icon {
+              width: 1rem;
+              height: 1rem;
+              margin-right: 2.5%;
+            }
+            .challengecard__misc__list__item__row--text {
+              font-size: 0.6rem;
+            }
+          }
+        }
+        .tag {
+          width: 5.6rem;
+          height: 1.5rem;
+          .challengecard__misc__list__item__tag--icon {
+            width: 0.7rem;
+            height: 0.7rem;
+            margin-right: 2.5%;
+            padding-left: 4%;
+          }
+          .challengecard__misc__list__item__tag--text {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+  .challengecard {
+    height: 24.5%;
+    width: 47.9%;
+    .challengecard__status {
+      margin-top: 4.055%;
+      margin-right: 4.055%;
+      .challengecard__activestatus--text {
+        font-size: 0.32rem;
+      }
+      .challengecard__inactivestatus--text {
+        font-size: 0.32rem;
+      }
+      .challengecard__activestatus--icon {
+        width: 0.32rem;
+        height: 0.32rem;
+      }
+      .challengecard__inactivestatus--icon {
+        width: 0.32rem;
+        height: 0.32rem;
+      }
+    }
+    .challengecard__header {
+      width: 100%;
+      margin: 0% 8.11% 0 8.11%;
+      .challengecard__header--image {
+        width: 2rem;
+        height: 2rem;
+        padding-right: 2.703%;
+      }
+      .challengecard__header__text {
+        .challengecard__header__text--title {
+          font-size: 0.56rem;
+        }
+        .challengecard__header__text--date {
+          font-size: 0.32rem;
+        }
+      }
+    }
+    .challengecard--paragraph {
+      font-size: 0.48rem;
+      line-height: 0.8rem;
+      margin: 5.406% 8.11% 0 8.11%;
+    }
+    .challengecard__misc {
+      margin: 5.406% 8.11% 5.406% 8.11%;
+      .challengecard__misc__list {
+        .challengecard__misc__list__item {
+          .challengecard__misc__list__item__row {
+            .challengecard__misc__list__item__row--icon {
+              width: 0.6rem;
+              height: 0.6rem;
+              margin-right: 2.5%;
+            }
+            .challengecard__misc__list__item__row--text {
+              font-size: 0.4rem;
+            }
+          }
+        }
+        .tag {
+          width: 3.8rem;
+          height: 1rem;
+          .challengecard__misc__list__item__tag--icon {
+            width: 0.4rem;
+            height: 0.4rem;
+            margin-right: 2.5%;
+            padding-left: 4%;
+          }
+          .challengecard__misc__list__item__tag--text {
+            font-size: 0.38rem;
+          }
+        }
+      }
+    }
+  }
+}

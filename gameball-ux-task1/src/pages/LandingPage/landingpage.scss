@@ -36,3 +36,17 @@
     }
   }
 }
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+}
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+  .landingpage {
+    width: 75%;
+    left: 25%;
+    .landingpage__animation {
+      width: 17.5rem;
+    }
+  }
+}

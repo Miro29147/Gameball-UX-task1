@@ -13,3 +13,29 @@
     margin-right: 3.516%;
   }
 }
+
+/* Large devices (desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+  .gameplan {
+    @include page-position;
+    .gameplan__gameplantabs {
+      margin-left: 3.516%;
+      margin-top: 4.8125rem;
+    }
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+}
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+  .gameplan {
+    width: 75%;
+    left: 25%;
+    .gameplan__gameplantabs {
+      margin-left: 3.516%;
+      margin-top: 4.4rem;
+    }
+  }
+}

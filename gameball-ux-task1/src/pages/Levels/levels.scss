@@ -24,3 +24,17 @@
     }
   }
 }
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+}
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+  .levels {
+    width: 75%;
+    left: 25%;
+    .levels__animation {
+      width: 17.5rem;
+    }
+  }
+}
